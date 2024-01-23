@@ -22,7 +22,6 @@
   padding: 0px 20px;
 }
 
-
 .nav__ul {
   display: flex;
   align-items: center;
@@ -54,12 +53,9 @@
   height: 90vh;
   background-image: url(./img/heroImg.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   opacity: 0.9;
   gap: 50px;
-
-  
-  
 }
 
 .hero__info {
@@ -121,7 +117,6 @@
   flex-wrap: wrap;
 }
 
-
 .about__empresa {
   font-size: larger;
   display: flex;
@@ -180,7 +175,7 @@
   border-radius: 20px;
   height: 450px;
   width: 300px;
-  padding: 20px ;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,7 +186,6 @@
 .diagnosticoComputarizado__img {
   border-radius: 25px;
   height: 40%;
- 
 }
 
 .diagnosticoComputarizado__h3 {
@@ -220,7 +214,6 @@
 .mecanicaGeneral__img {
   border-radius: 25px;
   height: 40%;
-
 }
 
 .mecanicaGeneral__h3 {
@@ -274,4 +267,87 @@
   background-color: var(--logo-color);
   color: var(--text-color);
   border: var(--logo-color);
+}
+
+/* Seccion contacto */
+
+.contacto {
+  background-color: var(--primary);
+  color: var(--text-color);
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  flex-direction: column;
+  gap: 20px;
+  border: 3px solid var(--logo-color);
+  padding: 50px 40px;
+  border-style: double;
+}
+
+.formItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.formItem input {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border-style: hidden;
+}
+
+.textAreaContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.textAreaContainer h3 {
+  color: var(--logo-color);
+}
+
+.menuDesplegable {
+  font-size: large;
+  border-radius: 50px;
+
+}
+
+.mapContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+
+.mapContainer h4 {
+  background-color: var(--logo-color);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: x-large;
+}
+.mapContainer iframe {
+  border-radius: 20px;
+  max-width: 1200px;
 }
