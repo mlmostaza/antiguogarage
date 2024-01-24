@@ -107,12 +107,12 @@
 /*About*/
 
 .about {
-  background-color: var(--background);
+  background-color: var(--primary);
   color: var(--text-color);
   display: flex;
   padding: 20px 30px;
   gap: 10px;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -281,6 +281,7 @@
   flex-direction: column;
   padding: 30px;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .form {
@@ -329,7 +330,6 @@
 .menuDesplegable {
   font-size: large;
   border-radius: 50px;
-
 }
 
 .mapContainer {
@@ -338,7 +338,6 @@
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  
 }
 
 .mapContainer h4 {
@@ -351,3 +350,36 @@
   border-radius: 20px;
   max-width: 1200px;
 }
+
+/* Footer */
+footer{
+  background-color: var(--logo-color);
+}
+.redesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 20px 0px 20px;
+}
+
+.redesItems {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.redesItems a {
+  display: flex;
+  justify-content: center;
+}
+.redesItems img {
+  height: 30px;
+
+}
+.derechosReservados{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

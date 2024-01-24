@@ -137,19 +137,23 @@
         <form class="form">
           <div class="formContainer">
             <div class="formItem">
-              <label for="nombre" >Ingresa tu nombre: </label>
-              <input id="nombre" type="text" placeholder="ej: Leonel Suarez"/>
+              <label for="nombre">Ingresa tu nombre: </label>
+              <input id="nombre" type="text" placeholder="ej: Leonel Suarez" />
             </div>
             <div class="formItem">
               <label for="telefono">Ingresa tu numero: </label>
-              <input id="telefono" type="tel" placeholder="ej: 011 1511223344 "/>
+              <input
+                id="telefono"
+                type="tel"
+                placeholder="ej: 011 1511223344 "
+              />
             </div>
             <div class="formItem">
               <label for="email">Ingresa tu mail: </label>
-              <input id="email" type="email" placeholder="ej: ls@gmail.com"/>
+              <input id="email" type="email" placeholder="ej: ls@gmail.com" />
             </div>
             <div class="textAreaContainer">
-              <h3>Seleccione motivo de su consulta: </h3>
+              <h3>Seleccione motivo de su consulta:</h3>
               <select class="menuDesplegable" name="" id="">
                 <option value="diagnosticoComputarizado">
                   Turno para diagnostico computarizado
@@ -162,18 +166,54 @@
                 </option>
               </select>
               <label for="consulta">mensaje:</label>
-              <textarea name="" id="consulta" cols="60" rows="4" placeholder="describanos el problema que presenta su vehiculo o el motivo de su consulta."></textarea>
+              <textarea
+                name=""
+                id="consulta"
+                cols="60"
+                rows="4"
+                placeholder="describanos el problema que presenta su vehiculo o el motivo de su consulta."
+              ></textarea>
+              <button type="submit">ENVIAR</button>
             </div>
           </div>
           <div class="mapContainer">
-            <h4>Nos encontramos en Berazategui, localidad de la provincia de Buenos Aires:</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52432.749500554666!2d-58.31637703372099!3d-34.779596015797274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3292a5b71f3ad%3A0xc01239ffd0314fd8!2sBerazategui%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1705971072449!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4>
+              Nos encontramos en Berazategui, ciudad de la provincia de Buenos
+              Aires:
+            </h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52432.749500554666!2d-58.31637703372099!3d-34.779596015797274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3292a5b71f3ad%3A0xc01239ffd0314fd8!2sBerazategui%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1705971072449!5m2!1ses-419!2sar"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </form>
-
       </section>
-      <section>ACA VA EL FOOTER</section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="redesContainer">
+          <h4>Seguinos en:</h4>
+          <div class="redesItems">
+            <a href="https://www.instagram.com/"
+              ><img
+                src="./assets/img/icon-instagram.svg"
+                alt="logo de instagram"
+            /></a>
+            <a href="https://www.facebook.com/"
+              ><img
+                src="./assets/img/icon-facebook.svg"
+                alt=" logo de facebook"
+            /></a>
+            <a href="http://www.linkedin.com/"
+              ><img src="./assets/img/icon-linkedin.svg" alt="logo de linkedin"
+            /></a>
+          </div>
+      </div>
+      <div class="derechosReservados"><p>© 2024 / Antiguo Garage</p></div>
+    </footer>
   </body>
 </html>
