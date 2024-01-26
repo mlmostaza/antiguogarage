@@ -18,21 +18,15 @@
         <img class="nav__img" src="./assets/img/Logo.png" alt="logo_inyector" />
 
         <ul class="nav__ul">
-          <li><a href="./index.html">Inicio</a></li>
-          <li>
-            <a href="./assets/sections/sobrenosotros.html">Sobre nosotros</a>
-          </li>
-          <li><a href="./assets/section/contacto.html">Contacto</a></li>
-          <li>
-            <a href="./assets/sections/serviciosbrindados.html"
-              >Nuestros Servicios</a
-            >
-          </li>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Sobre nosotros</a></li>
+          <li><a href="#servicios">Nuestros Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section id="hero">
         <div class="hero__info">
           <h1 class="hero__h1">Antiguo-Garage</h1>
           <p class="hero__parrafo">
@@ -40,12 +34,14 @@
             para potenciar tu motor"
           </p>
           <div class="hero__button">
-            <button type="button">Nuestros servicios🔩</button>
+            <button type="button">
+              <a href="#servicios">Nuestros servicios🔩</a>
+            </button>
             <button type="button">Contacto📱</button>
           </div>
         </div>
       </section>
-      <section class="about">
+      <section id="about">
         <div class="about__empresa">
           <h2>Nuestra Empresa:</h2>
           <p>
@@ -73,7 +69,7 @@
           </p>
         </div>
       </section>
-      <section class="servicios">
+      <section id="servicios">
         <h1>Nuestros servicios:</h1>
         <div class="cardsContainer">
           <div class="diagnosticoComputarizado">
@@ -132,7 +128,7 @@
           </div>
         </div>
       </section>
-      <section class="contacto">
+      <section id="contacto">
         <h1 class="contacto__h1">Contactate con nosotros📱</h1>
         <form class="form">
           <div class="formContainer">
@@ -196,24 +192,49 @@
     </main>
     <footer>
       <div class="redesContainer">
-          <h4>Seguinos en:</h4>
-          <div class="redesItems">
-            <a href="https://www.instagram.com/"
-              ><img
-                src="./assets/img/icon-instagram.svg"
-                alt="logo de instagram"
-            /></a>
-            <a href="https://www.facebook.com/"
-              ><img
-                src="./assets/img/icon-facebook.svg"
-                alt=" logo de facebook"
-            /></a>
-            <a href="http://www.linkedin.com/"
-              ><img src="./assets/img/icon-linkedin.svg" alt="logo de linkedin"
-            /></a>
-          </div>
+        <h4>Seguinos en:</h4>
+        <div class="redesItems">
+          <a href="https://www.instagram.com/"
+            ><img src="./assets/img/icon-instagram.svg" alt="logo de instagram"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img src="./assets/img/icon-facebook.svg" alt=" logo de facebook"
+          /></a>
+          <a href="http://www.linkedin.com/"
+            ><img src="./assets/img/icon-linkedin.svg" alt="logo de linkedin"
+          /></a>
+        </div>
       </div>
       <div class="derechosReservados"><p>© 2024 / Antiguo Garage</p></div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              600,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
   </body>
 </html>
