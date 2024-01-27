@@ -25,22 +25,21 @@ header {
   z-index: 2;
 }
 
- .nav-img {
+.nav-img {
   height: 75px;
-  padding-left: 20px;}
+  padding-left: 20px;
+}
 
-  .nav i {
-    font-size: 36px;
-    display: none;
-  }
+.nav i {
+  font-size: 36px;
+  display: none;
+}
 
-  #menu-toogle {
-    display: none;
-  }
+#menu-toogle {
+  display: none;
+}
 
-  
 .nav {
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -286,7 +285,7 @@ header {
   height: 40%;
 }
 
-#servicios  a {
+#servicios a {
   border: 2px solid;
   border-radius: 40px;
   padding: 5px 30px;
@@ -419,22 +418,22 @@ footer {
 /* ***************************** */
 
 /* Media queries */
+
+/* tablets */
 @media screen and (max-width: 768px) {
-
-
   .nav ul {
     background-color: var(--primary);
-   width: 50% ;
-   position: absolute;
-   top: 75px;
-   right: 0px;
-   border-top: 0px;
-   flex-direction: column;
-   margin: 0;
-   padding: 20px;
-   border-top-left-radius: 0px;
-   border-top-right-radius: 0px;
-   display: none;
+    width: 50%;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    border-top: 0px;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: none;
   }
 
   #menu-toogle:checked ~ .nav__ul {
@@ -445,18 +444,16 @@ footer {
     display: block;
   }
 
-
-  
   .form {
     flex-direction: column;
     padding-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 425px) {
+/* celulares */
 
-  
-  #about{
+@media screen and (max-width: 425px) {
+  #about {
     height: auto;
   }
 
@@ -468,9 +465,4 @@ footer {
   .formContainer {
     padding: 20px 10px;
   }
-}
-
-
-@media screen and (max-width: 375px) {
-
 }
