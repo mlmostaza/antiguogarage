@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antiguo-Garage</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Teko&display=swap"
       rel="stylesheet"
@@ -14,9 +16,10 @@
   </head>
   <body>
     <header>
+      <img class="nav-img" src="./assets/img/Logo.png" alt="logo_inyector" />
       <nav class="nav">
-        <img class="nav__img" src="./assets/img/Logo.png" alt="logo_inyector" />
-
+        <label for="menu-toogle"><i class="fa-solid fa-bars" style="color: #ff780a;"></i></label>
+        <input type="checkbox" id="menu-toogle" class="menu-toogle" />
         <ul class="nav__ul">
           <li><a href="#hero">Inicio</a></li>
           <li><a href="#about">Sobre nosotros</a></li>
@@ -37,7 +40,7 @@
             <button type="button">
               <a href="#servicios">Nuestros servicios🔩</a>
             </button>
-            <button type="button">Contacto📱</button>
+            <button type="button"><a href="#contacto">Contacto📱</a></button>
           </div>
         </div>
       </section>
@@ -89,7 +92,7 @@
               nuestro equipo experto. ¡Programa tu diagnóstico hoy mismo y volvé
               a rutear con confianza!</span
             >
-            <a>Reserva un turno!</a>
+            <a href="#contacto">Reserva un turno!</a>
           </div>
           <div class="mecanicaGeneral">
             <img
@@ -107,7 +110,7 @@
               motor. Estamos aca para cuidar tu automóvil. ¡Agenda un turno hoy
               y descubri la calidad de nuestro servicio!</span
             >
-            <a>Reserva un turno!</a>
+            <a href="#contacto">Reserva un turno!</a>
           </div>
           <div class="rectificacion">
             <img
@@ -124,7 +127,7 @@
               fábrica. Confía en nosotros para revitalizar y potenciar tu
               vehículo, garantizando un rendimiento óptimo y duradero.</span
             >
-            <a>Reserva un turno!</a>
+            <a href="#contacto">Reserva un turno!</a>
           </div>
         </div>
       </section>

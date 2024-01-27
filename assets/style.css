@@ -2,8 +2,8 @@
   --primary: #21293d;
   --secondary: #3d639d;
   --text-color: white;
-  --background: #293557;
-  --logo-color: #ff780a;
+  --background: rgb(41, 53, 87);
+  --logo-color: rgb(255, 120, 10);
 }
 
 * {
@@ -14,11 +14,36 @@
 
 /*Header*/
 
-.nav {
-  background-color: var(--primary);
-  height: 75px;
+header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  background-color: var(--primary);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+ .nav-img {
+  height: 75px;
+  padding-left: 20px;}
+
+  .nav i {
+    font-size: 36px;
+    display: none;
+  }
+
+  #menu-toogle {
+    display: none;
+  }
+
+  
+.nav {
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   padding: 0px 20px;
 }
 
@@ -30,7 +55,7 @@
   border: solid 2px var(--logo-color);
   border-radius: 5px;
   margin: 10px;
-  padding: 0px 10px;
+  padding: 10px;
   font-size: 20px;
 }
 
@@ -50,7 +75,7 @@
 #hero {
   display: flex;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
   background-image: url(./img/heroImg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,6 +126,11 @@
   transition: 0.6s;
 }
 
+.hero__button a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 .hero__button button:hover {
   background-color: var(--logo-color);
 }
@@ -116,6 +146,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .about__empresa {
@@ -255,16 +286,18 @@
   height: 40%;
 }
 
-.servicios a {
-  border: 2px solid var(--text-color);
+#servicios  a {
+  border: 2px solid;
   border-radius: 40px;
   padding: 5px 30px;
   font-weight: 500;
   font-size: large;
   transition: 0.4s;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
-.servicios a:hover {
+#servicios a:hover {
   background-color: var(--logo-color);
   color: var(--text-color);
   border: var(--logo-color);
@@ -387,6 +420,33 @@ footer {
 
 /* Media queries */
 @media screen and (max-width: 768px) {
+
+
+  .nav ul {
+    background-color: var(--primary);
+   width: 50% ;
+   position: absolute;
+   top: 75px;
+   right: 0px;
+   border-top: 0px;
+   flex-direction: column;
+   margin: 0;
+   padding: 20px;
+   border-top-left-radius: 0px;
+   border-top-right-radius: 0px;
+   display: none;
+  }
+
+  #menu-toogle:checked ~ .nav__ul {
+    display: flex;
+  }
+
+  .nav i {
+    display: block;
+  }
+
+
+  
   .form {
     flex-direction: column;
     padding-bottom: 30px;
@@ -394,6 +454,12 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
+
+  
+  #about{
+    height: auto;
+  }
+
   #contacto {
     padding: 10px;
     gap: 20px;
@@ -402,4 +468,9 @@ footer {
   .formContainer {
     padding: 20px 10px;
   }
+}
+
+
+@media screen and (max-width: 375px) {
+
 }
