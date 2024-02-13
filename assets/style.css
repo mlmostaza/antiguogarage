@@ -328,6 +328,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  max-width: 920px;
 }
 
 .formContainer {
@@ -337,20 +338,24 @@ header {
   flex-direction: column;
   gap: 20px;
   border: 3px solid var(--logo-color);
-  padding: 50px 40px;
+  padding: 15px 10px;
   border-style: double;
 }
 
 .formItem {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  width: 100%;
+}
+
+.formItem label {
+  width: 100%;
 }
 
 .formItem input {
-  width: 300px;
-  height: 30px;
+  width: 100%;
+  height: 35px;
   border-radius: 10px;
   border-style: hidden;
 }
@@ -360,13 +365,14 @@ header {
   flex-direction: column;
   gap: 10px;
   justify-content: center;
+  width: 100%;
 }
 
 .textAreaContainer textarea {
-  width: 400px;
+  width: 100%;
   height: 100px;
 
-  max-width: 400px;
+  max-width: 300px;
   max-height: 100px;
 }
 
@@ -435,7 +441,7 @@ footer {
 
 /* tablets */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .nav ul {
     background-color: var(--primary);
     width: 50%;
@@ -529,6 +535,11 @@ footer {
   .mapContainer h4 {
     font-size: large;
     padding: 10px 5px;
+    max-width: 300px;
+  }
+
+  .mapContainer iframe {
+    width: 300px;
   }
 }
 
@@ -559,14 +570,9 @@ footer {
   .mapContainer {
     width: 340px;
   }
-
-  .mapContainer iframe {
-    width: 340px;
-  }
 }
 
-@media screen and (max-width: 320px) {
-
+@media screen and (max-width: 340px) {
   .formContainer {
     width: 300px;
   }
@@ -576,5 +582,4 @@ footer {
   .mapContainer iframe {
     width: 300px;
   }
-  
 }
